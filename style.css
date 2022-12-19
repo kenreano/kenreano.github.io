@@ -41,36 +41,36 @@ html {
 
 .cursor-inner {
   position: fixed;
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   transform: translate(-50%, -50%);
   background-color: #fff;
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-  transition: width 0.4s, height 0.4s;
+  transition: width 0.4s ease, height 0.4s ease;
 }
 
 .cursor-inner.grow {
-  width: 30px;
-  height: 30px;
-  transition: width 0.2s, height 0.2s;
+  width: 50px;
+  height: 50px;
+  transition: width 0.2s ease, height 0.2s ease;
 }
 
 .cursor-outer {
   position: fixed;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   transform: translate(-50%, -50%);
   border: 2px solid #fff;
   mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
-  transition: width 0.35s, height 0.35s;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .cursor-outer.grow {
-  width: 45px;
-  height: 45px;
-  transition: width 0.15s, height 0.15s;
+  width: 60px;
+  height: 60px;
+  transition: width 0.1s ease, height 0.1s ease;
 }
