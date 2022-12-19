@@ -7,7 +7,6 @@ function moveCursor(event) {
   let x = event.clientX;
   let y = event.clientY;
 
-  console.log(x, y);
   cursorInner.style.left = x + "px";
   cursorInner.style.top = y + "px";
   cursorOuter.style.left = x + "px";
@@ -16,7 +15,6 @@ function moveCursor(event) {
 
 let links = Array.from(document.querySelectorAll(".navbar a"));
 links.forEach(link => {
-  console.log(links);
   link.addEventListener("mouseover", () => {
     cursorInner.classList.add("grow");
     cursorOuter.classList.add("grow");
