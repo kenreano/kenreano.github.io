@@ -1,3 +1,76 @@
-*{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Do Hyeon', sans-serif;
+  cursor: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.navbar nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #eee;
+}
+
+.navbar ul {
+  position: relative;
+  top: 40%;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.navbar a {
+  font-size: 1.25rem;
+}
+
+.cursor-inner {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.4s, height 0.4s;
+}
+
+.cursor-inner.grow {
+  width: 30px;
+  height: 30px;
+  transition: width 0.2s, height 0.2s;
+}
+
+.cursor-outer {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  pointer-events: none;
+  transition: width 0.35s, height 0.35s;
+}
+
+.cursor-outer.grow {
+  width: 45px;
+  height: 45px;
+  transition: width 0.15s, height 0.15s;
 }
